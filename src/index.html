@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>BOOP TEH SNEK (RPC Example)</title>
+        <link rel=stylesheet href=style.css />
+    </head>
+    <body>
+        <!--    <h1>BOOP TEH SNEK</h1>-->
+        <!--    <div id=game><div id=snek>🐍</div></div>-->
+        <!--    <h3 id=boops>0 BOOPS</h3>-->
+
+        <div id="main">
+            <div id="brawls" class="heroes-class">
+                <img src="img/sarge.png" alt="sarge" onmousedown="changeHeroTo('sarge')">
+                <img src="img/yuri.png" alt="yuri" onmousedown="changeHeroTo('yuri')">
+                <img src="img/ss.png" alt="ss" onmousedown="changeHeroTo('ss')">
+                <img src="img/cog.png" alt="cog" onmousedown="changeHeroTo('cog')">
+                <img src="img/roly.png" alt="roly" onmousedown="changeHeroTo('roly')">
+            </div>
+            <div id="agiles" class="heroes-class">
+                <img src="img/astra.png" alt="astra" onmousedown="changeHeroTo('astra')">
+                <img src="img/nigel.png" alt="nigel" onmousedown="changeHeroTo('nigel')">
+                <img src="img/kira.png" alt="kira" onmousedown="changeHeroTo('kira')">
+                <img src="img/juan.png" alt="juan" onmousedown="changeHeroTo('juan')">
+                <img src="img/kreepy.png" alt="kreepy" onmousedown="changeHeroTo('kreepy')">
+            </div>
+            <div id="heads" class="heroes-class">
+                <img src="img/genie.png" alt="genie" onmousedown="changeHeroTo('genie')">
+                <img src="img/eliza.png" alt="eliza" onmousedown="changeHeroTo('eliza')">
+                <img src="img/tony.png" alt="tony" onmousedown="changeHeroTo('tony')">
+                <img src="img/vander.png" alt="vander" onmousedown="changeHeroTo('vander')">
+                <img src="img/trond.png" alr="trond" onmousedown="changeHeroTo('trond')">
+            </div>
+        </div>
+        <form name="test" method="post" action="">
+            <p><b>Map: </b>
+                <input id="map" type="text" size="40">
+            </p>
+            <button type="button" id="confirm"><img src="img/block-n-load-logo.png" alt="Зонтик" style="vertical-align: middle" width="20px"> BLOCK IN <img src="img/block-n-load-logo.png" alt="Зонтик" style="vertical-align: middle" width="20px"></button>
+<!--            <p><input id="confirm" type="submit" value="Отправить">-->
+<!--                <input type="reset" value="Очистить"></p>-->
+        </form>
+        <script src=renderer.js></script>
+    </body>
+</html>
